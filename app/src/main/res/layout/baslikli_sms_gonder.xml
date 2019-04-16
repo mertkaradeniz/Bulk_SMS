@@ -1,0 +1,168 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.FrgBaslikliTopluSMS">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorwhite"
+                        android:padding="10dp"
+                        android:text="Başlık Seçiniz"
+                        android:textColor="@color/colorsearch"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorwhite"
+                        android:entries="@array/basliklar"
+                        android:ems="10"
+                        android:gravity="left"
+                        android:hint="Mesaj..."
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="false"
+
+                        android:textSize="25dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorwhite"
+                        android:padding="10dp"
+                        android:text="Mesaj Metnini Yazınız"
+                        android:textColor="@color/colorsearch"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/txt_mesaj"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorwhite"
+                        android:ems="10"
+                        android:gravity="left"
+                        android:hint="Mesaj..."
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="false"
+
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorwhite"
+                        android:padding="10dp"
+                        android:text="Alıcılar Yaz/Seç"
+                        android:textColor="@color/colorsearch"
+                        android:textSize="15dp" />
+
+                    <CheckedTextView
+                        android:id="@+id/chk_rehber_ek_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/colorwhite"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:checked="false"
+                        android:padding="5dp"
+                        android:text="Rehber Listesi ve Ek Numalaralardan Seç" />
+
+                    <EditText
+                        android:id="@+id/secilen_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorwhite"
+                        android:ems="10"
+                        android:gravity="left"
+                        android:hint="545*******"
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="false"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@color/colorsearch"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_sms_gonder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/buton"
+                        android:text="SMS Gönder"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

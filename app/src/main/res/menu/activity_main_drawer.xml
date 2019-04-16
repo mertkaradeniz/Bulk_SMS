@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/toplu_sms"
+            android:icon="@drawable/toplusms"
+            android:title="@string/toplu_sms_g_nder" />
+        <item
+            android:id="@+id/baslik_toplu_sms"
+            android:icon="@drawable/basliktoplusms"
+            android:title="@string/ba_l_kl_sms_g_nder" />
+        <item
+            android:id="@+id/ana_menu"
+            android:icon="@drawable/icon_person"
+            android:title="@string/ana_menu" />
+        <item
+            android:id="@+id/satin_al"
+            android:icon="@drawable/buy"
+            android:title="@string/sms_sat_n_al" />
+    </group>
+
+    <item android:title="@string/sosyal_medya">
+        <menu>
+            <item
+                android:id="@+id/takip_et"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/takip" />
+            <item
+                android:id="@+id/paylas"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/payla" />
+        </menu>
+    </item>
+
+</menu>

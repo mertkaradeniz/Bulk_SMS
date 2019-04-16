@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_senkron"
+        android:orderInCategory="100"
+        android:title="@string/ki_ileri_senkronize_et"
+        app:showAsAction="never" />
+    <item
+    android:id="@+id/action_import"
+    android:orderInCategory="100"
+    android:title="Dışarıdan Kişi Aktar"
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/action_smssettings"
+        android:orderInCategory="100"
+        android:title="@string/sms_ayarlar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/genel_ayarlar"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/kisiimagem"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="5dp"
+            android:layout_marginRight="15dp"
+
+            app:srcCompat="@drawable/person"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/kisiadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:layout_weight="1"
+                android:hint="Adınız"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/kisisoyadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:layout_weight="1"
+                android:hint="Soyadınız"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/kisibay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Bay"
+                    tools:ignore="RtlHardcoded" />
+
+                <RadioButton
+                    android:id="@+id/kisibayan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Bayan"
+                    tools:ignore="RtlHardcoded" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/kisitc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="TC'niz"
+            android:inputType="textPersonName"
+            android:maxLength="11"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/kisitel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Telefon"
+            android:inputType="phone"
+            android:maxLength="16" />
+
+        <EditText
+            android:id="@+id/kisidtarihi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Doğum Tarihi"
+            android:inputType="date"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/kisiitarihi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="İşlem Tarihi"
+            android:inputType="date"
+            android:maxLength="10" />
+
+
+        <Spinner
+            android:id="@+id/kisidyeri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_vazgec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buton"
+                android:text="Geri"
+                android:textColor="@color/colorwhite" />
+
+            <Button
+                android:id="@+id/btnkayit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buton"
+                android:text="yeni kayıt"
+                android:textColor="@color/colorwhite" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

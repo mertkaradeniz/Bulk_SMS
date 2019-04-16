@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listrehber"
+            android:layout_weight="1"
+            android:divider="@color/grey"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_weight="1"
+            android:background="@color/colorsearch"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_tm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buton"
+            android:text="Onayla"
+            android:textColor="@color/colorwhite"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
